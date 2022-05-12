@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/icons/favicon.png">
     <title>Css Mem Slider</title>
 </head>
 
@@ -17,41 +18,41 @@
 
     </header>
     <main class="main">
-        <div class="container">
-            <section class="slider">
-                <input type="radio" name="r-btn" id="r-btn-1" checked>
-                <input type="radio" name="r-btn" id="r-btn-2">
-                <input type="radio" name="r-btn" id="r-btn-3">
-                <input type="radio" name="r-btn" id="r-btn-4">
-                <input type="radio" name="r-btn" id="r-btn-5">
-                <div class="slider__wrapper">
-                    <div class="slide-item"><img src="./img/image1.jpg" alt="mem"></div>
-                    <div class="slide-item"><img src="./img/image2.jpg" alt="mem"></div>
-                    <div class="slide-item"><img src="./img/image3.jpg" alt="mem"></div>
-                    <div class="slide-item"><img src="./img/image4.jpg" alt="mem"></div>
-                    <div class="slide-item"><img src="./img/image5.jpg" alt="mem"></div>
+
+        <section class="slider">
+            <input type="radio" name="r-btn" id="r-btn-1" checked>
+            <input type="radio" name="r-btn" id="r-btn-2">
+            <input type="radio" name="r-btn" id="r-btn-3">
+            <input type="radio" name="r-btn" id="r-btn-4">
+            <input type="radio" name="r-btn" id="r-btn-5">
+            <div class="slider__wrapper">
+                <div class="slide-item"><img src="./img/image1.jpg" alt="mem"></div>
+                <div class="slide-item"><img src="./img/image2.jpg" alt="mem"></div>
+                <div class="slide-item"><img src="./img/image3.jpg" alt="mem"></div>
+                <div class="slide-item"><img src="./img/image4.jpg" alt="mem"></div>
+                <div class="slide-item"><img src="./img/image5.jpg" alt="mem"></div>
+            </div>
+            <div class="slider-box">
+                <div class="slider__info">
+                    <p class="slider__descr">Красивое</p>
+                    <p class="slider__descr">Освоение VPN</p>
+                    <p class="slider__descr">Итоги года</p>
+                    <p class="slider__descr">Наши судьбы в твоих руках</p>
+                    <p class="slider__descr">У каждого свои</p>
                 </div>
-                <div class="slider-box">
-                    <div class="slider__info">
-                        <p class="slider__descr">1111</p>
-                        <p class="slider__descr">2222</p>
-                        <p class="slider__descr">3333</p>
-                        <p class="slider__descr">4444</p>
-                        <p class="slider__descr">5555</p>
-                    </div>
-                    <div class="slider__navigation">
-                        <label class="nav-item" for="r-btn-1"></label>
-                        <label class="nav-item" for="r-btn-2"></label>
-                        <label class="nav-item" for="r-btn-3"></label>
-                        <label class="nav-item" for="r-btn-4"></label>
-                        <label class="nav-item" for="r-btn-5"></label>
-                    </div>
+                <div class="slider__navigation">
+                    <label class="nav-btn" for="r-btn-1"><span class="nav-btn__item"></span></label>
+                    <label class="nav-btn" for="r-btn-2"><span class="nav-btn__item"></span></label>
+                    <label class="nav-btn" for="r-btn-3"><span class="nav-btn__item"></span></label>
+                    <label class="nav-btn" for="r-btn-4"><span class="nav-btn__item"></span></label>
+                    <label class="nav-btn" for="r-btn-5"><span class="nav-btn__item"></span></label>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="footer__wrapper">
             <a class="footer__link" href="https://github.com/ElenaKostenich">
                 <img src="./img/icons/github.svg" alt="github">
             </a>
