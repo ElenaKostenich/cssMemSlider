@@ -30,7 +30,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    width: 42vw;
+    height: auto;
+    width: 30vw;
     border-radius: 3%;
     border: 0.01em solid #fff;
     box-shadow: 0 0 2em 0.01em #fff;
@@ -43,7 +44,6 @@ input[name="r-btn"] {
 .slider__wrapper {
     display: flex;
     width: 500%;
-    height: 49vh;
 }
 .slide-item {
     width: 25%;
@@ -56,6 +56,7 @@ input[name="r-btn"] {
 .slider-box {
     display: flex;
     justify-content: space-between;
+    padding: 0 1em;
 }
 .slider__navigation {
     display: flex;
@@ -75,7 +76,7 @@ input[name="r-btn"] {
     height: 1em;
     border-radius: 50%;
     background-color: rgba(240, 248, 255, 0.8);
-    transition: all 0.9s linear;
+    transition: all 0.5s linear;
 }
 .nav-btn:hover .nav-btn__item {
     background-color: rgba(240, 248, 255, 0.5);
@@ -85,7 +86,6 @@ input[name="r-btn"] {
     height: 5rem;
 }
 .slider__descr {
-    padding-left: 1rem;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -123,7 +123,16 @@ input[name="r-btn"] {
 #r-btn-5:checked ~ .slider-box > .slider__info > .slider__descr {
     transform: translateY(-400%);
 }
-/*  */
+
+#r-btn-1:checked ~ .slider-box > .slider__navigation > label[for="r-btn-1"] > .nav-btn__item,
+#r-btn-2:checked ~ .slider-box > .slider__navigation > label[for="r-btn-2"] > .nav-btn__item,
+#r-btn-3:checked ~ .slider-box > .slider__navigation > label[for="r-btn-3"] > .nav-btn__item,
+#r-btn-4:checked ~ .slider-box > .slider__navigation > label[for="r-btn-4"] > .nav-btn__item,
+#r-btn-5:checked ~ .slider-box > .slider__navigation > label[for="r-btn-5"] > .nav-btn__item {
+    background-color: rgba(44, 42, 42, 0.5);
+    border: 0.3em solid #fff;
+}
+
 .footer {
     margin: 0 auto;
     width: 60%;
