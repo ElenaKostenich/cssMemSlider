@@ -149,3 +149,24 @@ input[name="r-btn"] {
     height: 100%;
     width: 100%;
 }
+
+@media (max-width: 1024px) {
+    .slider {
+        width: 41vw;
+    }
+}
+@media (max-width: 721px) {
+    .slider {
+        width: 70vw;
+    }
+    .slider-box {
+        flex-direction: column-reverse;
+        padding: 0.5em 0.3em 0;
+    }
+    .slider__navigation {
+        align-self: center;
+    }
+    .footer {
+        width: 75%;
+    }
+}
